@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace TCU
 {
-  class Keys
+  public class Keys
   {
+    private bool active;
+
+    public void activateKey(int keyNumber)
+    {
+
+    }
   }
 }
