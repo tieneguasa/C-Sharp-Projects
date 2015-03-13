@@ -1,0 +1,15 @@
+c:\users\ieuser\documents\visual studio 2013\Projects\TCU\TCU\bin\Debug\TCU.exe.config
+c:\users\ieuser\documents\visual studio 2013\Projects\TCU\TCU\bin\Debug\TCU.exe
+c:\users\ieuser\documents\visual studio 2013\Projects\TCU\TCU\bin\Debug\TCU.pdb
+c:\users\ieuser\documents\visual studio 2013\Projects\TCU\TCU\obj\Debug\TCU.csprojResolveAssemblyReference.cache
+c:\users\ieuser\documents\visual studio 2013\Projects\TCU\TCU\obj\Debug\MainWindow.baml
+c:\users\ieuser\documents\visual studio 2013\Projects\TCU\TCU\obj\Debug\MainWindow.g.cs
+c:\users\ieuser\documents\visual studio 2013\Projects\TCU\TCU\obj\Debug\App.g.cs
+c:\users\ieuser\documents\visual studio 2013\Projects\TCU\TCU\obj\Debug\TCU_MarkupCompile.cache
+c:\users\ieuser\documents\visual studio 2013\Projects\TCU\TCU\obj\Debug\TCU.g.resources
+c:\users\ieuser\documents\visual studio 2013\Projects\TCU\TCU\obj\Debug\TCU.Properties.Resources.resources
+c:\users\ieuser\documents\visual studio 2013\Projects\TCU\TCU\obj\Debug\TCU.csproj.GenerateResource.Cache
+c:\users\ieuser\documents\visual studio 2013\Projects\TCU\TCU\obj\Debug\TCU.exe
+c:\users\ieuser\documents\visual studio 2013\Projects\TCU\TCU\obj\Debug\TCU.pdb
+C:\Users\IEUser\Documents\Visual Studio 2013\Projects\TCU\TCU\obj\Debug\MyKeys.baml
+C:\Users\IEUser\Documents\Visual Studio 2013\Projects\TCU\TCU\obj\Debug\MyKeys.g.cs
