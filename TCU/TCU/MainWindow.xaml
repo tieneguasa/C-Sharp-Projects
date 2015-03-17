@@ -1,7 +1,26 @@
 ﻿<Window x:Class="TCU.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:loc="clr-namespace:TCU"
         Title="MainWindow" Height="350" Width="525">
+  <Window.Resources>
+    <DataTemplate DataType="{x:Type Key}">
+      <Label Height="50"
+             Width="50"
+             Background="Bisque"
+             MouseDown="Key_MouseDown"
+             BorderThickness="4"
+             BorderBrush="DarkGray"
+             FontWeight="Bold"
+             FontSize="14" 
+             FontFamily="Tunga" 
+             HorizontalAlignment="Left" 
+             VerticalAlignment="Center"
+             Margin="5"
+             Content="{Binding name}"
+                />
+    </DataTemplate>
+  </Window.Resources>
     <Grid>
       <!--<StackPanel Orientation ="Horizontal">
         <Slider Name="mySlider" Minimum="0" Maximum="100" Width="300"/>
@@ -9,36 +28,40 @@
                       Text="{Binding Value, ElementName=mySlider}"/>
       </StackPanel>-->
       <StackPanel Orientation ="Horizontal">
-      <Label
-               Name="Key1"
-               Height="50"
-               Width="50"
-               Background="Bisque"
-               MouseDown="Key1_MouseDown"
-               BorderThickness="4"
-               BorderBrush="DarkGray" FontWeight="Bold" FontSize="14" FontFamily="Tunga" HorizontalAlignment="Left" VerticalAlignment="Center"
-              Margin="5" Content="1"
+      <ListBox ItemsSource="{Binding}" />
+      <!--<Label DataContext="StaticResource Key1"
+             Name="Key01"
+             Height="50"
+             Width="50"
+             Background="Bisque"
+             MouseDown="Key_MouseDown"
+             BorderThickness="4"
+             BorderBrush="DarkGray" FontWeight="Bold" FontSize="14" FontFamily="Tunga" HorizontalAlignment="Left" VerticalAlignment="Center"
+             Margin="5"
+             Content="1"
                 />
-      <Label Content="2"
-             Name="Key2"
+      <Label DataContext="StaticResource Key2"
+             Content="2"
+             Name="Key02"
              Height="50"
              Width="50"
              Background="Bisque"
-             MouseDown="Key1_MouseDown"
+             MouseDown="Key_MouseDown"
              BorderThickness="4"
              BorderBrush="DarkGray" FontWeight="Bold" FontSize="14" FontFamily="Tunga" HorizontalAlignment="Left" VerticalAlignment="Center"
              Margin="5"
              />
-      <Label Content="3"
-             Name="Key3"
+      <Label DataContext="StaticResource Key3"
+             Content="3"
+             Name="Key03"
              Height="50"
              Width="50"
-             Background="Bisque"
-             MouseDown="Key1_MouseDown"
+             Background="{Binding}"
+             MouseDown="Key_MouseDown"
              BorderThickness="4"
              BorderBrush="DarkGray" FontWeight="Bold" FontSize="14" FontFamily="Tunga" HorizontalAlignment="Left" VerticalAlignment="Center"
              Margin="5"
-             />
+             />-->
       <TextBlock Margin="5"
                  Name="keyName"
                    />

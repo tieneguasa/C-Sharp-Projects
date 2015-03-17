@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TCU;
 
 namespace TCU
 {
@@ -22,10 +23,30 @@ namespace TCU
     {
         public MainWindow()
         {
-            InitializeComponent();
+          InitializeComponent();
+
+          List<Key> TCUKeyboard = new List<Key>();
+          
+          TCUKeyboard.Add(new Key("key01"));
+          TCUKeyboard.Add(new Key("key02"));
+          TCUKeyboard.Add(new Key("key03"));
+          TCUKeyboard.Add(new Key("key04"));
+          TCUKeyboard.Add(new Key("key05"));
+          TCUKeyboard.Add(new Key("key06"));
+          TCUKeyboard.Add(new Key("key07"));
+          TCUKeyboard.Add(new Key("key08"));
+          TCUKeyboard.Add(new Key("key09"));
+          TCUKeyboard.Add(new Key("key10"));
+          TCUKeyboard.Add(new Key("key11"));
+          TCUKeyboard.Add(new Key("key12"));
+          TCUKeyboard.Add(new Key("key13"));
+          TCUKeyboard.Add(new Key("key14"));
+          TCUKeyboard.Add(new Key("key15"));
+
+          this.DataContext = TCUKeyboard;
         }
 
-        private void Key1_MouseDown(object sender, MouseButtonEventArgs e)
+        private void Key_MouseDown(object sender, MouseButtonEventArgs e)
         {
           Control label = ((Control)sender);
           if (label.Background == Brushes.Bisque)
@@ -38,5 +59,6 @@ namespace TCU
           }
           keyName.Text = label.Name;
         }
+
     }
 }
